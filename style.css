@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: #9b59b6;
+    height: 45%;
+  }
+  /* Title styles */
+  .container .title {
+    font-size: x-large;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: #9b59b6;
+    
+  }
+  
+  /* User details form styles */
+  .content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  
+  /* Input box styles */
+  .user-details .input-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .user-details .input-box input {
+    height: 45px;
+    width: 80%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid {
+    border-color: #9b59b6;
+  }
+  
+  /* Button styles */
+  form .button {
+    height: 45px;
+    margin: 35px 0;
+  }
+    /* Button container styles */
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px 10px;
+  }
+  
+  form .button input:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 584px) {
+    .container {
+      max-width: 100%;
+    }
+    form .user-details .input-box {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category {
+      width: 100%;
+    }
+    .content form .user-details {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+  
+  @media (max-width: 459px) {
+    .container .content .category {
+      flex-direction: column;
+    }
+  }
+  
